@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIO DATA</title>
+  <meta charset="UTF-8">
+  <title>Simple Form with Table</title>
 </head>
-<body bgcolor="red">
-      <center> 
-        <h1> BIO DATA</h1>
-     </center> 
-     <h2> Information </h2>
-     <img src="pic.jpg" height="150" width="150">
-     <br>
-     <td>
-      <b>
-            <td>P.subash</td>
-            <br>
-            <td>PHn: 8074690221</td> 
-            <tr>DOB:23-10-2006</tr><br>
-            ADDRESS:Undavalli<br>
-            </b>
-     </td>
-     
-     <h2 style="background-color: blue; t"> subash </h2> 
-    <h2 style="text-align: center; background-color: blue;"> subash</h2>
+<body>
+
+  <h2>Registration Form</h2>
+
+  <form>
+    <table border="0" cellpadding="8">
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="username"></td>
+      </tr>
+
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="useremail"></td>
+      </tr>
+
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="userpass"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Register">
+        </td>
+      </tr>
+    </table>
+  </form>
+
 </body>
 </html>
